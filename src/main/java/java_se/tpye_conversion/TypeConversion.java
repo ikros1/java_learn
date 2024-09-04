@@ -1,4 +1,4 @@
-package java_se.basic_input_output;
+package java_se.tpye_conversion;
 
 public class TypeConversion {
     public static void main(String[] args) {

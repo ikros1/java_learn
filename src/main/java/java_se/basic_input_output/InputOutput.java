@@ -2,7 +2,7 @@ package java_se.basic_input_output;
 
 import java.util.Scanner;
 
-public class Input {
+public class InputOutput {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a int number: ");
@@ -14,5 +14,6 @@ public class Input {
         System.out.println("Enter a double number");
         double d = sc.nextDouble();
         System.out.println("Enter double is :"+d);
+
     }
 }
