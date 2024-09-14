@@ -3,6 +3,7 @@ package java_se.reference_type;
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
 import java.util.Map;
+//https://www.ikaros.love/?p=457
 // 软引用的特点
 //内存回收: 软引用对象的回收是基于 JVM 的内存需求。
 // 当系统内存不足时，垃圾回收器会优先回收软引用指向的对象。
