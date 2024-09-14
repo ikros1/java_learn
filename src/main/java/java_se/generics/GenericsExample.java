@@ -1,0 +1,63 @@
+package java_se.generics;
+
+public class GenericsExample {
+    // 泛型方法 printArray
+    public static < E > void printArray( E[] inputArray )
+    {
+        // 输出数组元素
+        for ( E element : inputArray ){
+            System.out.printf( "%s ", element );
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        //Java 泛型（generics）是 JDK 5 中引入的一个新特性,
+        // 泛型提供了编译时类型安全检测机制，
+        // 该机制允许程序员在编译时检测到非法的类型。
+        //泛型的本质是参数化类型，
+        // 也就是说所操作的数据类型被指定为一个参数。
+        //假定我们有这样一个需求：写一个排序方法，能够对整型数组、
+        // 字符串数组甚至其他任何类型的数组进行排序，该如何实现？
+        //答案是可以使用 Java 泛型。
+        //使用 Java 泛型的概念，
+        // 我们可以写一个泛型方法来对一个对象数组排序。
+        // 然后，调用该泛型方法来对整型数组、
+        // 浮点数数组、字符串数组等进行排序。
+
+        //泛型方法
+        //你可以写一个泛型方法，该方法在调用时可以接收不同类型的参数。
+        // 根据传递给泛型方法的参数类型，编译器适当地处理每一个方法调用。
+        //下面是定义泛型方法的规则：
+        //所有泛型方法声明都有一个类型参数声明部分（由尖括号分隔），
+        // 该类型参数声明部分在方法返回类型之前（在下面例子中的 <E>）。
+        //每一个类型参数声明部分包含一个或多个类型参数，
+        // 参数间用逗号隔开。一个泛型参数，也被称为一个类型变量，
+        // 是用于指定一个泛型类型名称的标识符。
+        //类型参数能被用来声明返回值类型，
+        // 并且能作为泛型方法得到的实际参数类型的占位符。
+        //泛型方法体的声明和其他方法一样。
+        // 注意类型参数只能代表引用型类型，不能是原始类型（
+        // 像 int、double、char 等）。
+        //java 中泛型标记符：
+        //E - Element (在集合中使用，因为集合中存放的是元素)
+        //T - Type（Java 类）
+        //K - Key（键）
+        //V - Value（值）
+        //N - Number（数值类型）
+        //？ - 表示不确定的 java 类型
+
+        // 创建不同类型数组： Integer, Double 和 Character
+        Integer[] intArray = { 1, 2, 3, 4, 5 };
+        Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
+        Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+
+        System.out.println( "整型数组元素为:" );
+        printArray( intArray  ); // 传递一个整型数组
+
+        System.out.println( "\n双精度型数组元素为:" );
+        printArray( doubleArray ); // 传递一个双精度型数组
+
+        System.out.println( "\n字符型数组元素为:" );
+        printArray( charArray ); // 传递一个字符型数组
+    }
+}
