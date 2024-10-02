@@ -1,4 +1,4 @@
-package java_se.package_class;
+package java_se.wrapper_class;
 
 public class BasicPackageClass {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class BasicPackageClass {
         double	64bit	Double
         void	/	    Void
         Java中的包装器类有两个主要的目的：
+        java中引用类型可以赋值为null，但是基本类型不能赋值为空
 
         1,提供一种机制，将基本值“包装”到对象中，
         从而使基本值能够包含在为对象而保留的操作中，
@@ -58,6 +59,12 @@ public class BasicPackageClass {
         Integer i2 = 100;
         Integer i3 = 200;
         Integer i4 = 200;
+        String str = "I love java";
+        String str1 = str;
+        str = "s";
+
+        System.out.println("after replace str:" + str.replace("java", "Java"));
+        System.out.println("after replace str1:" + str1);
 
         System.out.println(i1==i2);
         System.out.println(i3==i4);
@@ -181,5 +188,7 @@ public class BasicPackageClass {
         （如果数值是int类型的，装箱过程调用的是Integer.valueOf；
         如果是long类型的，装箱调用的Long.valueOf方法）。
          */
+        //包装类常用方法和属性
+
     }
 }
