@@ -1,6 +1,7 @@
 package java_se.value_or_reference_safe_example;
 
 import java.util.Arrays;
+//https://www.ikaros.love/?p=606
 
 public class Main {
     public static void main(String[] args) {
