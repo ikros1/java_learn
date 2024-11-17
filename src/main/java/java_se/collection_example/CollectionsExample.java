@@ -119,6 +119,7 @@ public class Main {
         System.out.println(immutable);
     }
 }
+
 线程安全集合
 Collections还提供了一组方法，可以把线程不安全的集合变为线程安全的集合：
 
