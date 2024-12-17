@@ -1,3 +1,6 @@
-2024-10-17 00:48:37,622 INFO [java_se.log_example.CommonsLoggingExample] - info
-2024-10-17 00:48:37,622 WARN [java_se.log_example.CommonsLoggingExample] - warn
-2024-10-17 00:48:37,622 ERROR [java_se.log_example.CommonsLoggingExample] - error
+2024-12-17 08:20:26,002 INFO [java_se.test_example.JUnitExampleTest] - testQueryDatabaseException passed
+2024-12-17 08:20:26,016 INFO [java_se.test_example.JUnitExampleTest] - testAdd passed
+2024-12-17 08:20:26,021 INFO [java_se.test_example.JUnitExampleTest] - test on windows
+2024-12-17 08:20:26,034 INFO [java_se.test_example.JUnitExampleTest] - testWriteFile passed
+2024-12-17 08:20:26,043 INFO [java_se.test_example.JUnitExampleTest] - testDeleteFile passed
+2024-12-17 08:20:26,446 INFO [java_se.test_example.JUnitExampleTest] - testQueryDatabase passed
